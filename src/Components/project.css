@@ -1,0 +1,117 @@
+#projects {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .project-title {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease, padding-bottom 0.3s ease;
+  }
+  
+  .project-title:hover {
+    border-bottom: 2px solid #00FFFF; /* Change border color on hover */
+    padding-bottom: 1rem; /* Change padding-bottom on hover to a different value */
+  }
+  
+  
+  .project-description {
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 51rem;
+    padding: 0 2rem;
+  }
+  
+  .project-bars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+  }
+  
+  .project-bar {
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+    transition: transform 0.3s ease-in-out; /* Transition effect for transform */
+  }
+  
+  .project-bar:hover {
+    transform: translateY(-5px); /* Adjust the value as needed */
+  }
+  
+  .project-bar-img {
+    object-fit: cover;
+    height: 5rem;
+    width: 13rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .project-bar-img > p {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  
+  #txt2 {
+    padding-left: 60px;
+  }
+  
+  .github-link {
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .github-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  .github-link:hover {
+    color: crimson;
+    transform: scale(1.05);
+  }
+  
+  #p2img {
+    width: 100px;
+  }
+  
+  @media screen and (max-width: 720px) {
+    .project-bar-text > p {
+      font-size: 2vw;
+    }
+    .project-head {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .project-bar-text > p {
+      font-size: 2vw;
+    }
+    .project-bar-img {
+      height: 2.35rem;
+      width: 4.35rem;
+    }
+    .project-head {
+      font-size: 1rem;
+      /* Further adjust the font size for smaller screens */
+    }
+  }
+  

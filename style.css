@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:ital,wght@0,300;0,400;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: 'Inspiration', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(30,30,30);
+    color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+}

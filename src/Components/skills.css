@@ -1,0 +1,96 @@
+/* skills.css */
+#skills {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .skilltitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.1rem;
+    padding-bottom: 0.1rem;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease, padding-bottom 0.3s ease; /* Adding transitions for border-bottom and padding-bottom */
+  }
+  
+  .skilltitle:hover {
+    border-bottom: 2px solid #00FFFF; /* Change border color on hover */
+    padding-bottom: 0.5rem; /* Change padding-bottom on hover */
+  }
+  
+  
+  .skilldesc {
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 51rem;
+    padding: 0 2rem;
+  }
+  
+  .skillbars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+  }
+  
+  .skillbar {
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+    transition: transform 0.3s ease-in-out; /* Transition effect for transform */
+  }
+  
+  .skillbar:hover {
+    transform: translateY(-5px); /* Adjust the value as needed */
+  }
+  
+  .skillbartext h2 {
+    font-size: medium;
+  }
+  
+  .skillbarimg {
+    object-fit: cover;
+    height: 3rem;
+    width: 4rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+  }
+  
+  
+  
+  .skillbarimg > p {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  
+  @media screen and (max-width: 720px) {
+    .skillbartext > p {
+      font-size: 2vw;
+    }
+    .txthead {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .skilltitle {
+      font-size: 1.4rem;
+    }
+    .skillbarimg {
+      height: 2.25rem;
+      width: 2.25rem;
+    }
+    .skillbartext > h3 {
+      font-size: 1.1rem;
+    }
+  }
+  

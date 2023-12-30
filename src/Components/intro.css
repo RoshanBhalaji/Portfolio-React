@@ -1,0 +1,111 @@
+#intro {
+    height: calc(100vh - 4rem);
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .logo{
+    cursor: pointer;
+  }
+  
+  .bg {
+    position: absolute;
+    z-index: -2;
+    top: 4rem;
+    left: 49%;
+    object-fit: cover;
+    height: 80vh;
+  }
+  
+  .introcontent {
+    height: 100vh;
+    width: 100vw;
+    font-size: 3rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+  }
+  
+  .introname {
+    color: #00ffff;
+  }
+  
+  .intropara {
+    font-size: medium;
+    font-weight: 100;
+    letter-spacing: 1px;
+  }
+  
+  .anchor-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 2rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 2rem;
+    transition: background-color 0.3s, color 0.3s;
+    width: auto; /* Adjust the width as needed */
+    max-width: 200px; /* Set a maximum width for responsiveness */
+  }
+  
+  .anchor-btn:hover {
+    background-color: #333;
+    color: white;
+  }
+  
+  
+  .hire-me-icon {
+    margin: 0 0.20rem;
+    height: -4rem;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .bg {
+      right: -70vw;
+    }
+    .introcontent {
+      font-size: 7vw;
+    }
+    .hello {
+      font-size: 3.5vw;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .bg {
+      width: 80%;
+      height: 80vh;
+      object-fit: cover;
+      border-radius: 80px;
+      margin-left: 1px;
+    }
+    .introcontent {
+      font-size: 5vw;
+    }
+    .hello {
+      font-size: 2.5vw;
+    }
+    .intropara {
+      font-size: small;
+    }
+        .anchor-btn {
+          padding: 0.5rem 1.5rem; /* Adjusted padding for smaller screens */
+          font-size: 0.9rem; /* Adjusted font size for smaller screens */
+        }
+      
+      
+  }
+  
